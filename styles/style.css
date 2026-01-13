@@ -1,3 +1,11 @@
+.letter-spacing-extended {
+    letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -62,10 +70,12 @@
     content: "";
     position: absolute;
     inset: 0;
+    z-index: -1;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover {
+    z-index: 1;
     min-height: 757px;
     padding: 165px 50px 50px;
     color: #fff;
@@ -74,8 +84,6 @@
 }
 
 .cover__title {
-    position: relative;
-    z-index: 3;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -103,8 +111,6 @@
 }
 
 .cover__description {
-    position: relative;
-    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,7 +119,7 @@
 }
 
 .cover__description-text {
-    word-spacing: 90%;
+    word-spacing: 19px;
 }
 
 .bet-button {
@@ -178,7 +184,6 @@
 
 .card__title {
     position: relative;
-    z-index: 3;
     font-weight: bold;
     font-size: 22px;
     line-height: 120%;
@@ -189,7 +194,6 @@
 
 .card__text {
     position: relative;
-    z-index: 3;
     font-size: 20px;
     line-height: 120%;
 }
@@ -251,7 +255,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 180px;
-    padding: 0 50px;
+    padding: 0 50px 80px;
 }
 
 .footer__address {
